@@ -48,7 +48,7 @@ Funzionalità riservate all'Amministratore:
 # Tecnologie utilizzate
 
 * C#
-* .NET 10
+* .NET 8
 * Programmazione Orientata agli Oggetti (OOP)
 * Generics
 * LINQ
@@ -117,12 +117,10 @@ Durante lo sviluppo del progetto sono stati approfonditi diversi concetti fondam
 
 Il progetto può essere esteso introducendo nuove funzionalità, ad esempio:
 
-* utilizzo di Entity Framework Core con database relazionale;
-* validazioni più avanzate;
-* logging delle operazioni;
-* esportazione dei dati in PDF o Excel;
-* interfaccia grafica con WPF o WinForms;
-* sviluppo di API REST con ASP.NET Core.
+* Miglioramento delle validazioni.
+* Esportazione dei dati in PDF o Excel.
+* Introduzione di un database relazionale tramite Entity Framework Core.
+* Realizzazione di un'interfaccia grafica con WPF.
 
 ---
 
