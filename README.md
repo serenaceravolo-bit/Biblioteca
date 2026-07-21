@@ -1,123 +1,148 @@
-📚 Biblioteca - Console Application (.NET C#)
+# Biblioteca - Console Application (.NET C#)
 
-Descrizione
+## Descrizione
 
-Biblioteca è un'applicazione console sviluppata in C#/.NET per la gestione di una biblioteca.
+**Biblioteca** è un'applicazione console sviluppata in **C#** con **.NET**, progettata per simulare la gestione di una biblioteca.
 
-Il progetto permette di gestire utenti, libri e prestiti tramite un sistema di autenticazione con ruoli differenti (Amministratore e Utente). I dati vengono persistiti in file JSON, senza l'utilizzo di un database.
+L'applicazione consente di amministrare utenti, libri e prestiti attraverso un sistema di autenticazione con ruoli differenti (Amministratore e Utente). La persistenza dei dati è gestita tramite file **JSON**, senza l'utilizzo di un database relazionale.
 
-Questo progetto è stato realizzato come esercizio di apprendimento della piattaforma .NET con particolare attenzione ai principi della programmazione orientata agli oggetti e all'organizzazione del codice.
-
----
-
-Funzionalità
-
-Autenticazione
-
-- Login tramite username e password (verifica password tramite hashing)
-- Registrazione con hashing password
-- Gestione dei ruoli:
-  - Amministratore
-  - Utente
-
-Gestione utenti (Amministratore)
-
-- Registrazione nuovi utenti con hashing password
-- Visualizzazione utenti registrati
-
-Gestione libri
-
-- Inserimento di nuovi libri
-- Visualizzazione catalogo con indicazione di disponibilità
-- Ricerca dei libri
-- Eliminazione dei libri
-
-Gestione prestiti
-
-- Registrazione di un prestito
-- Restituzione di un libro
+Il progetto è stato realizzato come esercizio pratico per consolidare le competenze nello sviluppo con **C#** e **.NET**, con particolare attenzione alla programmazione orientata agli oggetti, all'organizzazione del codice e alla separazione delle responsabilità.
 
 ---
 
-Tecnologie utilizzate
+# Funzionalità
 
-- C#
-- .NET 10
-- Programmazione orientata agli oggetti (OOP)
-- Programmazione generica (Generics)
-- LINQ
-- Serializzazione e deserializzazione JSON ("System.Text.Json")
-- Gestione file
-- Console Application
+## Autenticazione
+
+* Login tramite username e password.
+* Password memorizzate in modo sicuro mediante hashing con salt.
+* Registrazione di nuovi utenti.
+* Gestione dei ruoli:
+
+  * Amministratore
+  * Utente
+
+## Gestione utenti
+
+Funzionalità riservate all'Amministratore:
+
+* Registrazione di nuovi utenti.
+* Visualizzazione dell'elenco degli utenti.
+
+## Gestione libri
+
+* Inserimento di nuovi libri.
+* Visualizzazione del catalogo.
+* Ricerca dei libri.
+* Eliminazione dei libri.
+* Visualizzazione della disponibilità dei volumi.
+
+## Gestione prestiti
+
+* Registrazione di nuovi prestiti.
+* Restituzione dei libri.
+* Aggiornamento automatico della disponibilità dei volumi.
 
 ---
 
-Struttura del progetto
+# Tecnologie utilizzate
 
+* C#
+* .NET 10
+* Programmazione Orientata agli Oggetti (OOP)
+* Generics
+* LINQ
+* System.Text.Json
+* Gestione dei file
+* Console Application
+
+---
+
+# Struttura del progetto
+
+```text
 Biblioteca
-- Models
-  - Libro
-  - Prestito
-  - Utente
-- Services
-  - BibliotecaService
-  - LibriService
-  - UtentiService
-  - PrestitiService
-- UI
-  - MenuUtente
-  - MenuAdmin
-- Controllers
-  - MenuController
-  - Login
-- Utility
-  - Utility
-  - PasswordHelper
-  - GestioneFile
-- Documenti
-  - libri.json
-  - utenti.json
-  - prestiti.json
-- Avvio.cs
+│
+├── Models
+│   ├── Libro
+│   ├── Prestito
+│   ├── Utente
+│   └── Biblio
+│
+├── Services
+│   ├── BibliotecaService
+│   ├── LibriService
+│   ├── PrestitiService
+│   └── UtentiService
+│
+├── Controllers
+│   ├── Login
+│   └── MenuController
+│
+├── UI
+│   ├── MenuAdmin
+│   └── MenuUtente
+│
+├── Utility
+│   ├── PasswordHelper
+│   ├── FileManager
+│   └── Utility
+│
+├── Documenti
+│   ├── libri.json
+│   ├── utenti.json
+│   └── prestiti.json
+│
+└── Avvio.cs
+```
 
 ---
 
-Concetti applicati
+# Concetti applicati
 
-Durante lo sviluppo sono stati utilizzati diversi concetti della programmazione ad oggetti:
+Durante lo sviluppo del progetto sono stati approfonditi diversi concetti fondamentali della programmazione:
 
-- incapsulamento
-- classi e oggetti
-- separazione delle responsabilità
-- utilizzo di metodi generici
-- utilizzo di LINQ per interrogare le collezioni
-- persistenza dei dati tramite file JSON
-- Sicurezza delle password tramite hashing.
-
----
-
-Possibili sviluppi futuri
-
-- utilizzo di Entity Framework Core con database relazionale
-- validazioni più avanzate
-- logging delle operazioni
-- interfaccia grafica (WPF o WinForms)
-- API REST con ASP.NET Core
+* Programmazione orientata agli oggetti (OOP).
+* Incapsulamento.
+* Separazione delle responsabilità (Separation of Concerns).
+* Organizzazione del codice in modelli, servizi, controller e interfaccia utente.
+* Utilizzo dei metodi generici.
+* Interrogazione delle collezioni tramite LINQ.
+* Persistenza dei dati mediante serializzazione e deserializzazione JSON.
+* Gestione della sicurezza delle password tramite hashing con salt.
 
 ---
 
-Obiettivo del progetto
+# Possibili sviluppi futuri
 
-Lo scopo del progetto è stato approfondire lo sviluppo di applicazioni in C# e .NET, consolidando le conoscenze su:
+Il progetto può essere esteso introducendo nuove funzionalità, ad esempio:
 
-- progettazione orientata agli oggetti
-- gestione dei dati
-- organizzazione del codice
-- utilizzo delle librerie del framework
-- sviluppo di un'applicazione completa, dalla progettazione alla persistenza dei dati
+* utilizzo di Entity Framework Core con database relazionale;
+* validazioni più avanzate;
+* logging delle operazioni;
+* esportazione dei dati in PDF o Excel;
+* interfaccia grafica con WPF o WinForms;
+* sviluppo di API REST con ASP.NET Core.
 
 ---
 
-Note
+# Obiettivo del progetto
 
-Questo progetto è stato sviluppato a scopo didattico e rappresenta un esercizio pratico per consolidare l'apprendimento del linguaggio C# e della piattaforma .NET.
+L'obiettivo principale è stato realizzare un'applicazione completa che permettesse di consolidare le conoscenze acquisite durante il percorso di apprendimento di C# e .NET.
+
+In particolare, il progetto ha consentito di approfondire:
+
+* progettazione orientata agli oggetti;
+* organizzazione del codice;
+* gestione delle collezioni;
+* persistenza dei dati;
+* utilizzo delle librerie del framework .NET;
+* sviluppo di un'applicazione completa, dalla progettazione all'implementazione.
+
+---
+
+# Note
+
+Questo progetto è stato sviluppato a scopo didattico come esercizio pratico per consolidare le competenze nello sviluppo di applicazioni con **C#** e **.NET**.
+
+Pur trattandosi di un progetto di apprendimento, è stato progettato seguendo principi di organizzazione del codice e di buona progettazione software, con particolare attenzione alla separazione delle responsabilità e alla manutenibilità dell'applicazione.
