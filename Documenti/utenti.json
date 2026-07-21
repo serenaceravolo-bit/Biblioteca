@@ -1,0 +1,34 @@
+[
+  {
+    "CodiceTessera": "00001",
+    "Nome": "admin",
+    "Cognome": "admin",
+    "Ruolo": 0,
+    "PasswordHash": "xyO3tbgke4Wg4S0/k8vVppu8inBCVc7iX4aJ/u7PQ0o=",
+    "Salt": "4YOEXzIy/yzy4nSj69k2XA=="
+  },
+  {
+    "CodiceTessera": "00002",
+    "Nome": "Pinco",
+    "Cognome": "Pallino",
+    "Ruolo": 1,
+    "PasswordHash": "kNsJDSLHQ4FhL4NEtj33k0IXoY6mldpTsCzVB\u002BwtR00=",
+    "Salt": "m04G8Zt245be93LvMTNHVA=="
+  },
+  {
+    "CodiceTessera": "00003",
+    "Nome": "Mario",
+    "Cognome": "Rossi",
+    "Ruolo": 1,
+    "PasswordHash": "aBIwrKbt6rf97ulvf1wCwZbLB9udDbuErpktK0jVKTE=",
+    "Salt": "opCVYgKnVk9xHnkqyzeHKQ=="
+  },
+  {
+    "CodiceTessera": "00004",
+    "Nome": "Alessandra",
+    "Cognome": "Amoroso",
+    "Ruolo": 1,
+    "PasswordHash": "Rkj3Wpgr0sMNT2DUROmRJR/UBuJyTQunMaoRWFFhohw=",
+    "Salt": "dnM65oJ3P4IMlH\u002BAOCyypw=="
+  }
+]
