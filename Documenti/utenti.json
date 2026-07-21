@@ -30,13 +30,5 @@
     "Ruolo": 1,
     "PasswordHash": "Rkj3Wpgr0sMNT2DUROmRJR/UBuJyTQunMaoRWFFhohw=",
     "Salt": "dnM65oJ3P4IMlH\u002BAOCyypw=="
-  },
-  {
-    "CodiceTessera": "00005",
-    "Nome": "Serena",
-    "Cognome": "C",
-    "Ruolo": 1,
-    "PasswordHash": "Qrl\u002Bk3PqybsUGB5SPejLiqEQ7dxWJ2WC9wDj3iK1WwU=",
-    "Salt": "Qhk7wrLURgPvfSN6m9xQnA=="
   }
 ]

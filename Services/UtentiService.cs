@@ -75,13 +75,15 @@ public class UtenteService
     public void ModificaRuolo()
     {
         string codiceTessera = Utility.LeggiCampoObbligatorio("Codice tessera dell'utente: ");
-        string nuovoRuolo = Utility.LeggiCampoObbligatorio("Nuovo Ruolo (1 per Utente, 2 per Amministratore): ");
         Utente? utente = _biblioteca.utenti.FirstOrDefault(u => u.CodiceTessera == codiceTessera);
+        
         if (utente == null)
         {
             Console.WriteLine("Utente non trovato");
             return;
         } 
+
+        string nuovoRuolo = Utility.LeggiCampoObbligatorio("Nuovo Ruolo (1 per Utente, 2 per Amministratore): ");
         switch (nuovoRuolo)
         {
             case "1":
