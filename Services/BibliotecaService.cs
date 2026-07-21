@@ -112,7 +112,7 @@ public class BiblioService
         if (tipoLista == TipoLista.Libri)
         {
             risultati = _biblioteca.libri
-                .Where(l => termini.All(t =>
+                .Where(l => termini.Any(t =>
                     l.Titolo.Contains(t, StringComparison.OrdinalIgnoreCase) ||
                     l.Autore.Contains(t, StringComparison.OrdinalIgnoreCase) ||
                     l.CodiceLibro.Contains(t, StringComparison.OrdinalIgnoreCase)))
@@ -124,7 +124,7 @@ public class BiblioService
         else if (tipoLista == TipoLista.Utenti)
         {
             risultati = _biblioteca.utenti
-                .Where(u => termini.All(t =>
+                .Where(u => termini.Any(t =>
                     u.Nome.Contains(t, StringComparison.OrdinalIgnoreCase) ||
                     u.Cognome.Contains(t, StringComparison.OrdinalIgnoreCase) ||
                     u.CodiceTessera.Contains(t, StringComparison.OrdinalIgnoreCase) ||
